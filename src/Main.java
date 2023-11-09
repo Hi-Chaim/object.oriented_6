@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
             String[] arr;
             Scanner scanner = new Scanner(System.in);
             str = scanner.nextLine();
-            if (str == "clear") {
+            if (str.equals("clear")) {
                 arr=null;
                 str = scanner.next();
             }
@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
                 if (str.contains(operators[i])) {
                     operator = operators[i];
                     arr = str.split(Pattern.quote(operator));
-                    if (operator == "sqrt") {
+                    if (operator.equals("sqrt")) {
                         num1 = Double.parseDouble(arr[1]);
                     }
                     else {
