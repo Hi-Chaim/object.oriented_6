@@ -127,7 +127,7 @@ public class Calculator implements ActionListener {
         /////////////////change the line below//////////
         textField.setBounds(50,25,300,50);
         textField.setFont(myFont);
-        /////change to false so the user will not be able to write from the keyboard, only use my buttons//////
+        /////change to false so the user can't write from the keyboard, only use my buttons//////
         textField.setEditable(false);
         addButton=new JButton("+");
         subButton=new JButton("-");
